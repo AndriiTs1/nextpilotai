@@ -695,3 +695,30 @@ body {
   width: 100%;
   text-align: center;
 }
+
+/* Final brand alignment on all screen sizes */
+.site-brand-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+}
+
+.site-brand-name,
+.site-brand-subtitle {
+  width: 100%;
+  text-align: center;
+}
+
+.site-brand-subtitle {
+  display: block;
+}
+
+@media (max-width: 390px) {
+  .site-brand-subtitle {
+    display: block;
+  }
+}
+
