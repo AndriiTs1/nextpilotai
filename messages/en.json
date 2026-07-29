@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "title": "NextPilotAI",
+    "titleTemplate": "%s | NextPilotAI",
+    "description": "Modern websites, web applications and AI-powered business automation in Lugano, Switzerland."
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Language switcher"
+  },
+  "header": {
+    "homeAriaLabel": "NextPilotAI home",
+    "brandName": "NextPilotAI",
+    "brandSubtitle": "Technology partner",
+    "statusText": "Available for new projects"
+  },
+  "hero": {
+    "badge": "SITES · APPS · AUTOMATION",
+    "titleLine1": "The digital system behind",
+    "titleAccent": "a business that works.",
+    "description": "NextPilot AI designs websites, web applications, automation and artificial intelligence as a single system: your business stops depending on scattered tools and starts working in a coordinated way.",
+    "cta": "Tell me about your project",
+    "trust": "You talk directly to the person who builds it, with no one in between.",
+    "capabilities": [
+      { "value": "AI", "label": "Automation" },
+      { "value": "Web", "label": "Systems" },
+      { "value": "Architecture", "label": "Before the code" }
+    ]
+  },
+  "trustStrip": {
+    "ariaLabel": "Trust signals",
+    "signals": [
+      "Based in Lugano, Switzerland",
+      "Direct contact, no intermediaries",
+      "Architecture before code",
+      "Transparent process, step by step"
+    ]
+  },
+  "problems": {
+    "eyebrow": "COMMON SITUATIONS",
+    "heading": "The same difficulties keep repeating across many businesses.",
+    "lead": "A website that doesn't generate leads, requests getting lost between WhatsApp and email, tools that don't talk to each other: these are rarely isolated problems — more often they're the same problem seen from different angles.",
+    "items": [
+      {
+        "label": "The website isn't working for you",
+        "text": "It's online, but it doesn't drive any concrete action and doesn't reflect the real level of the business."
+      },
+      {
+        "label": "Requests get lost",
+        "text": "Between WhatsApp, email and phone calls, an interested contact can simply disappear."
+      },
+      {
+        "label": "Too much work done by hand",
+        "text": "Data copied from one system to another, separate calendars and spreadsheets that nobody actually keeps in sync."
+      },
+      {
+        "label": "It's not clear what's really needed",
+        "text": "A website, an app, an automation: without an overall view, you risk paying for the wrong thing."
+      }
+    ],
+    "transition": "It's never a single tool that makes the difference, but the way the whole system works together."
+  },
+  "solutions": {
+    "eyebrow": "DIGITAL NEEDS",
+    "heading": "Every business needs different solutions, not a one-size-fits-all recipe.",
+    "lead": "The difficulties described above are rarely solved with a single move: depending on what's really holding the business back, the right answer might be a website, an application, an automation, or a connection between systems that already exist.",
+    "items": [
+      {
+        "title": "Present the business online",
+        "service": "Websites",
+        "description": "If the website is old, slow or missing, visitors don't understand what to do and don't perceive the real level of the business: the result is fewer leads and less trust.",
+        "examples": ["Company website", "Landing page", "Information area"],
+        "result": "More clarity for visitors, more requests that actually come in."
+      },
+      {
+        "title": "Manage internal processes",
+        "service": "Web Applications",
+        "description": "When spreadsheets, messages and different tools aren't enough to keep everything under control anymore, you need a tool built around how the team actually works, not the other way around.",
+        "examples": ["Client area", "Operations dashboard", "Request management"],
+        "result": "Fewer manual steps, more organized and easier-to-follow processes."
+      },
+      {
+        "title": "Reduce manual work",
+        "service": "Automation and Artificial Intelligence",
+        "description": "Answering the same questions over and over, moving data by hand from one system to another, or sorting documents one by one costs valuable time: automation and AI step in only where they genuinely reduce this load, without replacing people.",
+        "examples": ["Automatic replies", "Document management", "Notifications and workflows"],
+        "result": "Less repetitive work, more time for what actually matters."
+      },
+      {
+        "title": "Sell and connect systems",
+        "service": "E-commerce and Integrations",
+        "description": "Selling online takes much more than a catalog: you need reliable payments, a real connection with the tools already in use, and data that updates itself between systems, without double the work.",
+        "examples": ["Catalog and orders", "Online payments", "CRM integration"],
+        "result": "Sales and connected systems, without duplicate data to manage by hand."
+      }
+    ],
+    "transition": "Often the right answer combines more than one of these solutions: that's why the architecture is worked out before choosing the tool."
+  },
+  "process": {
+    "eyebrow": "THE METHOD",
+    "heading": "Architecture first, then development — one step at a time.",
+    "lead": "Whether it's a website, an application or an automation, the way of working stays the same: first the problem is understood, then the solution is designed, and only at the end is the code written.",
+    "steps": [
+      {
+        "index": "01",
+        "title": "Listening and analysis",
+        "description": "It starts with a conversation about the business's real process, not a form to fill in: goals, constraints and priorities are brought into focus together.",
+        "result": "A clear view of what's really needed, before talking about solutions."
+      },
+      {
+        "index": "02",
+        "title": "Solution architecture",
+        "description": "Before a single line of code is written, it's defined how the different parts of the system need to communicate with each other and with the tools already in use.",
+        "result": "A clear technical plan, agreed on before development begins."
+      },
+      {
+        "index": "03",
+        "title": "Phased development",
+        "description": "The project moves forward in controlled phases, each with a concrete result to verify, instead of a single block delivered only at the end.",
+        "result": "Visible progress step by step, with no last-minute surprises."
+      },
+      {
+        "index": "04",
+        "title": "Verification and delivery",
+        "description": "Before delivery, the solution is checked in real working conditions, not just on paper, so any fixes happen before launch.",
+        "result": "A verified solution, ready to actually be used."
+      }
+    ],
+    "differentiation": {
+      "heading": "What makes it different",
+      "principles": [
+        "Direct contact with the person who builds it",
+        "Architecture before code",
+        "Transparent development, verified step by step"
+      ]
+    }
+  },
+  "cases": {
+    "eyebrow": "DEMONSTRATIVE SCENARIOS",
+    "heading": "Examples of how a disorganized process turns into a system.",
+    "lead": "These aren't published client case studies, but demonstrative scenarios: they show how a disorganized process can turn into a coordinated system, step by step.",
+    "toggle": {
+      "prima": "Before",
+      "dopo": "After"
+    },
+    "status": {
+      "frammentato": "Fragmented process",
+      "coordinato": "Coordinated system"
+    },
+    "toggleAriaLabel": "{title}: before or after",
+    "items": [
+      {
+        "title": "Automatic request management",
+        "problema": "Clients write in from different channels — website, WhatsApp, email, phone — and requests get lost, duplicated, or left unanswered.",
+        "risultato": "Every request arrives in one place, gets a clear status, and the team always knows who has already replied and what to do next.",
+        "tecnologie": "Next.js · NestJS · PostgreSQL · AI · Email and messaging integration",
+        "prima": [
+          "Website, WhatsApp, email, phone",
+          "Manual copying into spreadsheets",
+          "Lost or duplicated requests"
+        ],
+        "dopo": [
+          "Website, WhatsApp, email",
+          "Single request intake",
+          "Automatic classification",
+          "CRM and dashboard",
+          "Team notification and automatic reply"
+        ]
+      },
+      {
+        "title": "Automatic document processing",
+        "problema": "A PDF document arrives, and someone has to read it, copy the data by hand and enter it into another system.",
+        "risultato": "Documents get processed faster, data becomes structured, and a person verifies the result instead of retyping everything by hand.",
+        "tecnologie": "Next.js · AI/LLM · PDF extraction · PostgreSQL · Data verification",
+        "prima": [
+          "PDF received",
+          "Manual reading",
+          "Data copying",
+          "Spreadsheet or management software"
+        ],
+        "dopo": [
+          "PDF upload",
+          "Automatic text extraction",
+          "AI analysis",
+          "Structured data",
+          "Human verification and export"
+        ]
+      },
+      {
+        "title": "Booking and appointment management",
+        "problema": "Clients call or write to ask about availability, and someone has to check the calendar by hand, reply, and remember the appointment.",
+        "risultato": "The client books without long back-and-forth messaging, the calendar updates itself, and forgotten appointments decrease.",
+        "tecnologie": "Next.js · Calendar API · Email and Telegram · Automation · Database",
+        "prima": [
+          "Phone call or message",
+          "Manual calendar check",
+          "Confirmation via chat",
+          "Forgotten appointments"
+        ],
+        "dopo": [
+          "Online form or chat",
+          "Availability check",
+          "Booking recorded",
+          "Calendar sync",
+          "Automatic confirmation and reminder"
+        ]
+      }
+    ],
+    "cta": {
+      "heading": "Do you have a similar process in your business?",
+      "text": "You don't need to know which technology to use: it starts with the problem, and the right solution gets built together from there.",
+      "button": "Tell me about your project"
+    }
+  },
+  "footer": {
+    "brandName": "NextPilotAI",
+    "location": "Lugano, Switzerland · AI · Web · Automation",
+    "copyright": "© 2026"
+  }
+}

@@ -1,19 +1,14 @@
-const capabilities = [
-  {
-    value: "AI",
-    label: "Automazione",
-  },
-  {
-    value: "Web",
-    label: "Sistemi",
-  },
-  {
-    value: "Architettura",
-    label: "Prima del codice",
-  },
-];
+import { getTranslations } from "next-intl/server";
 
-export default function Main() {
+type Capability = {
+  value: string;
+  label: string;
+};
+
+export default async function Main() {
+  const t = await getTranslations("hero");
+  const capabilities = t.raw("capabilities") as Capability[];
+
   return (
     <main className="site-main">
       <div className="site-background" aria-hidden="true">
@@ -22,31 +17,23 @@ export default function Main() {
 
       <section className="hero">
         <div className="hero-content">
-          <p className="hero-badge">SITI · APP · AUTOMAZIONE</p>
+          <p className="hero-badge">{t("badge")}</p>
 
           <h1 className="hero-title">
-            Il sistema digitale dietro{" "}
-            <span className="hero-title-accent">un&apos;azienda che funziona.</span>
+            {t("titleLine1")}{" "}
+            <span className="hero-title-accent">{t("titleAccent")}</span>
           </h1>
 
           <div className="hero-bottom">
             <div className="hero-actions">
-              <p className="hero-description">
-                NextPilot AI progetta siti, applicazioni web, automazioni e
-                intelligenza artificiale come un unico sistema: la tua azienda
-                smette di dipendere da strumenti sparsi e inizia a lavorare in
-                modo coordinato.
-              </p>
+              <p className="hero-description">{t("description")}</p>
 
               <div className="hero-cta-group">
                 <button type="button" className="hero-cta">
-                  Scrivimi del tuo progetto
+                  {t("cta")}
                 </button>
 
-                <p className="hero-trust">
-                  Parli direttamente con chi sviluppa, senza passaggi
-                  intermedi.
-                </p>
+                <p className="hero-trust">{t("trust")}</p>
               </div>
             </div>
 

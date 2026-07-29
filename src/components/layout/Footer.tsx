@@ -1,11 +1,15 @@
-export default function Footer() {
+import { getTranslations } from "next-intl/server";
+
+export default async function Footer() {
+  const t = await getTranslations("footer");
+
   return (
     <footer className="site-footer">
-      <span>NextPilotAI</span>
+      <span>{t("brandName")}</span>
 
-      <span>Lugano, Switzerland · AI · Web · Automation</span>
+      <span>{t("location")}</span>
 
-      <span>© 2026</span>
+      <span>{t("copyright")}</span>
     </footer>
   );
 }

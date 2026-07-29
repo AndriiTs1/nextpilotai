@@ -12,6 +12,9 @@ type CaseFlowProps = {
   tecnologie: string;
   prima: string[];
   dopo: string[];
+  toggleLabels: { prima: string; dopo: string };
+  statusLabels: { frammentato: string; coordinato: string };
+  toggleAriaLabel: string;
 };
 
 export default function CaseFlow({
@@ -22,6 +25,9 @@ export default function CaseFlow({
   tecnologie,
   prima,
   dopo,
+  toggleLabels,
+  statusLabels,
+  toggleAriaLabel,
 }: CaseFlowProps) {
   const [view, setView] = useState<"prima" | "dopo">("prima");
   const groupId = useId();
@@ -42,7 +48,7 @@ export default function CaseFlow({
         <div
           className="case-flow-toggle"
           role="group"
-          aria-label={`${title}: prima o dopo`}
+          aria-label={toggleAriaLabel}
           id={groupId}
         >
           <button
@@ -51,7 +57,7 @@ export default function CaseFlow({
             aria-pressed={view === "prima"}
             onClick={() => setView("prima")}
           >
-            Prima
+            {toggleLabels.prima}
           </button>
           <button
             type="button"
@@ -59,13 +65,13 @@ export default function CaseFlow({
             aria-pressed={view === "dopo"}
             onClick={() => setView("dopo")}
           >
-            Dopo
+            {toggleLabels.dopo}
           </button>
         </div>
 
         <div className="case-flow-panels">
           <div className="case-panel" data-active={view === "prima"}>
-            <p className="case-panel-label">Processo frammentato</p>
+            <p className="case-panel-label">{statusLabels.frammentato}</p>
             {prima.map((step) => (
               <FlowNode key={step} label={step} variant="manual" />
             ))}
@@ -73,7 +79,7 @@ export default function CaseFlow({
 
           <div className="case-panel" data-active={view === "dopo"}>
             <p className="case-panel-label case-panel-label--automated">
-              Sistema coordinato
+              {statusLabels.coordinato}
             </p>
             {dopo.map((step) => (
               <FlowNode key={step} label={step} variant="automated" />

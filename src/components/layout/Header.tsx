@@ -1,21 +1,30 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
-export default function Header() {
+import { Link } from "@/i18n/navigation";
+
+import LanguageSwitcher from "./LanguageSwitcher";
+
+export default async function Header() {
+  const t = await getTranslations("header");
+
   return (
     <header className="site-header">
-      <Link href="/" className="site-brand" aria-label="NextPilotAI home">
+      <Link href="/" className="site-brand" aria-label={t("homeAriaLabel")}>
         <span className="site-logo">N</span>
 
         <span className="site-brand-content">
-          <span className="site-brand-name">NextPilotAI</span>
-          <span className="site-brand-subtitle">Partner tecnologico</span>
+          <span className="site-brand-name">{t("brandName")}</span>
+          <span className="site-brand-subtitle">{t("brandSubtitle")}</span>
         </span>
       </Link>
 
-      <div className="site-status">
-        <span className="site-status-dot" aria-hidden="true" />
+      <div className="site-header-right">
+        <div className="site-status">
+          <span className="site-status-dot" aria-hidden="true" />
+          <span className="site-status-text">{t("statusText")}</span>
+        </div>
 
-        <span className="site-status-text">Disponibile per nuovi progetti</span>
+        <LanguageSwitcher />
       </div>
     </header>
   );
