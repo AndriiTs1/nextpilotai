@@ -8,14 +8,14 @@ export default function Header() {
 
         <span className="site-brand-content">
           <span className="site-brand-name">NextPilotAI</span>
-          <span className="site-brand-subtitle">Digital intelligence</span>
+          <span className="site-brand-subtitle">Partner tecnologico</span>
         </span>
       </Link>
 
       <div className="site-status">
         <span className="site-status-dot" aria-hidden="true" />
 
-        <span className="site-status-text">Building the next version</span>
+        <span className="site-status-text">Disponibile per nuovi progetti</span>
       </div>
     </header>
   );
