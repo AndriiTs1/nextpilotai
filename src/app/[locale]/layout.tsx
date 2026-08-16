@@ -29,6 +29,78 @@ function localeHref(locale: string) {
   return locale === routing.defaultLocale ? "/" : `/${locale}`;
 }
 
+const STRUCTURED_DATA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "NextPilotAI",
+      url: SITE_URL,
+      description:
+        "Modern websites, web applications and AI-powered business automation.",
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Lugano",
+        },
+        {
+          "@type": "Country",
+          name: "Switzerland",
+        },
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: "NextPilotAI",
+      publisher: {
+        "@id": `${SITE_URL}/#organization`,
+      },
+    },
+    {
+      "@type": "Service",
+      "@id": `${SITE_URL}/#web-development`,
+      name: "Web Development",
+      serviceType: "Web Development",
+      provider: {
+        "@id": `${SITE_URL}/#organization`,
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "Switzerland",
+      },
+    },
+    {
+      "@type": "Service",
+      "@id": `${SITE_URL}/#web-applications`,
+      name: "Web Applications",
+      serviceType: "Web Application Development",
+      provider: {
+        "@id": `${SITE_URL}/#organization`,
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "Switzerland",
+      },
+    },
+    {
+      "@type": "Service",
+      "@id": `${SITE_URL}/#ai-automation`,
+      name: "AI Business Automation",
+      serviceType: "AI Business Automation",
+      provider: {
+        "@id": `${SITE_URL}/#organization`,
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "Switzerland",
+      },
+    },
+  ],
+};
+
 const OG_LOCALE: Record<string, string> = {
   it: "it_IT",
   en: "en_US",
@@ -104,6 +176,12 @@ export default async function LocaleLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(STRUCTURED_DATA).replace(/</g, "\\u003c"),
+          }}
+        />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
