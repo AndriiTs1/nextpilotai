@@ -10,7 +10,7 @@ export default async function Main() {
   const capabilities = t.raw("capabilities") as Capability[];
 
   return (
-    <main className="site-main">
+    <main id="top" className="site-main">
       <div className="site-background" aria-hidden="true">
         <div className="site-grid" />
       </div>

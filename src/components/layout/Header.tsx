@@ -9,7 +9,7 @@ export default async function Header() {
 
   return (
     <header className="site-header">
-      <Link href="/" className="site-brand" aria-label={t("homeAriaLabel")}>
+      <Link href="/#top" className="site-brand" aria-label={t("homeAriaLabel")}>
         <span className="site-logo">N</span>
 
         <span className="site-brand-content">
