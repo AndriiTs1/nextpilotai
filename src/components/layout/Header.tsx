@@ -1,20 +1,18 @@
 import { getTranslations } from "next-intl/server";
 
 import LanguageSwitcher from "./LanguageSwitcher";
+import ScrollToTopBrand from "./ScrollToTopBrand";
 
 export default async function Header() {
   const t = await getTranslations("header");
 
   return (
     <header className="site-header">
-      <a href="#top" className="site-brand" aria-label={t("homeAriaLabel")}>
-        <span className="site-logo">N</span>
-
-        <span className="site-brand-content">
-          <span className="site-brand-name">{t("brandName")}</span>
-          <span className="site-brand-subtitle">{t("brandSubtitle")}</span>
-        </span>
-      </a>
+      <ScrollToTopBrand
+        brandName={t("brandName")}
+        brandSubtitle={t("brandSubtitle")}
+        ariaLabel={t("homeAriaLabel")}
+      />
 
       <div className="site-header-right">
         <div className="site-status">

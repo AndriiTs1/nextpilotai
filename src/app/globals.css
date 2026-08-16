@@ -3790,3 +3790,22 @@ html {
   }
 }
 
+
+/* Mobile — tighten spacing before Common Situations */
+@media (max-width: 768px) {
+  .problems {
+    margin-top: 48px;
+  }
+}
+
+
+/* Brand button reset */
+button.site-brand {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
