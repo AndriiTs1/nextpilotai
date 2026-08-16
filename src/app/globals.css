@@ -3868,3 +3868,24 @@ body {
   overflow-x: clip;
 }
 
+
+/* Mobile — center Common Situations intro */
+@media (max-width: 768px) {
+  .problems .section-intro {
+    align-items: center;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .problems .section-eyebrow,
+  .problems .section-heading,
+  .problems .section-lead {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .problems .section-eyebrow {
+    justify-content: center;
+  }
+}
+
