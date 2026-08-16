@@ -1,7 +1,5 @@
 import { getTranslations } from "next-intl/server";
 
-import { Link } from "@/i18n/navigation";
-
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default async function Header() {
@@ -9,14 +7,14 @@ export default async function Header() {
 
   return (
     <header className="site-header">
-      <Link href="/#top" className="site-brand" aria-label={t("homeAriaLabel")}>
+      <a href="#top" className="site-brand" aria-label={t("homeAriaLabel")}>
         <span className="site-logo">N</span>
 
         <span className="site-brand-content">
           <span className="site-brand-name">{t("brandName")}</span>
           <span className="site-brand-subtitle">{t("brandSubtitle")}</span>
         </span>
-      </Link>
+      </a>
 
       <div className="site-header-right">
         <div className="site-status">

@@ -3782,3 +3782,11 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/* Mobile header — compact brand */
+@media (max-width: 560px) {
+  .site-brand-subtitle {
+    display: none;
+  }
+}
+
