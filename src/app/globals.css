@@ -3809,3 +3809,30 @@ button.site-brand {
   cursor: pointer;
 }
 
+
+/* Mobile Cases V2 — remove horizontal page movement */
+@media (max-width: 768px) {
+  .cases-v2-tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+    width: 100%;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .cases-v2-tab {
+    width: 100%;
+    min-width: 0;
+    min-height: 58px;
+    padding: 12px 14px;
+  }
+
+  .cases-v2-tab-title {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+}
+
