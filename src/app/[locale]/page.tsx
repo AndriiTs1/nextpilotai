@@ -11,7 +11,6 @@ import BusinessSolutionsSection from "@/components/sections/BusinessSolutionsSec
 import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
 import ClientProblemsSection from "@/components/sections/ClientProblemsSection";
 import ProcessDifferentiationSection from "@/components/sections/ProcessDifferentiationSection";
-import TrustStrip from "@/components/sections/TrustStrip";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -29,7 +28,6 @@ export default async function Home({ params }: PageProps) {
       <div className="site-container">
         <Header />
         <Main />
-        <TrustStrip />
         <ClientProblemsSection />
         <BusinessSolutionsSection />
         <ProcessDifferentiationSection />

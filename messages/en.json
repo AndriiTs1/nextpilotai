@@ -21,18 +21,35 @@
     "cta": "Tell me about your project",
     "trust": "You talk directly to the person who builds it, with no one in between.",
     "capabilities": [
-      { "value": "AI", "label": "Automation" },
-      { "value": "Web", "label": "Systems" },
-      { "value": "Architecture", "label": "Before the code" }
+      {
+        "value": "AI",
+        "label": "Automation"
+      },
+      {
+        "value": "Web",
+        "label": "Systems"
+      },
+      {
+        "value": "Architecture",
+        "label": "Before the code"
+      }
     ]
   },
   "trustStrip": {
-    "ariaLabel": "Trust signals",
+    "ariaLabel": "Collaboration benefits",
     "signals": [
-      "Based in Lugano, Switzerland",
-      "Direct contact, no intermediaries",
-      "Architecture before code",
-      "Transparent process, step by step"
+      {
+        "title": "Direct contact",
+        "text": "No managers or intermediaries"
+      },
+      {
+        "title": "Tailored architecture",
+        "text": "Solution first, code second"
+      },
+      {
+        "title": "Transparent process",
+        "text": "Clear steps from idea to launch"
+      }
     ]
   },
   "problems": {
@@ -60,79 +77,88 @@
     "transition": "It's never a single tool that makes the difference, but the way the whole system works together."
   },
   "solutions": {
-    "eyebrow": "DIGITAL NEEDS",
-    "heading": "Every business needs different solutions, not a one-size-fits-all recipe.",
-    "lead": "The difficulties described above are rarely solved with a single move: depending on what's really holding the business back, the right answer might be a website, an application, an automation, or a connection between systems that already exist.",
+    "eyebrow": "DIGITAL SOLUTIONS",
+    "heading": "Every business needs its own solution.",
+    "lead": "Website, application, automation or integration — the right choice depends on what is actually holding the business back.",
     "items": [
       {
         "title": "Present the business online",
         "service": "Websites",
-        "description": "If the website is old, slow or missing, visitors don't understand what to do and don't perceive the real level of the business: the result is fewer leads and less trust.",
-        "examples": ["Company website", "Landing page", "Information area"],
-        "result": "More clarity for visitors, more requests that actually come in."
+        "description": "A modern website makes the value of the business clear and guides visitors toward the right action.",
+        "examples": [
+          "Company website",
+          "Landing page",
+          "Information area"
+        ],
+        "result": "More trust, clarity and qualified enquiries."
       },
       {
         "title": "Manage internal processes",
         "service": "Web Applications",
-        "description": "When spreadsheets, messages and different tools aren't enough to keep everything under control anymore, you need a tool built around how the team actually works, not the other way around.",
-        "examples": ["Client area", "Operations dashboard", "Request management"],
-        "result": "Fewer manual steps, more organized and easier-to-follow processes."
+        "description": "When spreadsheets, messages and separate tools stop being enough, the team needs a system built around how it actually works.",
+        "examples": [
+          "Client area",
+          "Operations dashboard",
+          "Request management"
+        ],
+        "result": "Fewer manual steps and clearer processes."
       },
       {
         "title": "Reduce manual work",
-        "service": "Automation and Artificial Intelligence",
-        "description": "Answering the same questions over and over, moving data by hand from one system to another, or sorting documents one by one costs valuable time: automation and AI step in only where they genuinely reduce this load, without replacing people.",
-        "examples": ["Automatic replies", "Document management", "Notifications and workflows"],
-        "result": "Less repetitive work, more time for what actually matters."
+        "service": "AI & Automation",
+        "description": "Automation handles repetitive tasks, data and documents where it can genuinely save time.",
+        "examples": [
+          "Automatic replies",
+          "Document management",
+          "Notifications and workflows"
+        ],
+        "result": "Less routine work, more time for what matters."
       },
       {
         "title": "Sell and connect systems",
-        "service": "E-commerce and Integrations",
-        "description": "Selling online takes much more than a catalog: you need reliable payments, a real connection with the tools already in use, and data that updates itself between systems, without double the work.",
-        "examples": ["Catalog and orders", "Online payments", "CRM integration"],
-        "result": "Sales and connected systems, without duplicate data to manage by hand."
+        "service": "E-commerce & Integrations",
+        "description": "Sales, payments, CRM and other tools can work as one connected system without duplicate data entry.",
+        "examples": [
+          "Catalog and orders",
+          "Online payments",
+          "CRM integration"
+        ],
+        "result": "Connected sales and data without unnecessary manual work."
       }
     ],
-    "transition": "Often the right answer combines more than one of these solutions: that's why the architecture is worked out before choosing the tool."
+    "transition": "The best solution often combines several areas — so the system is designed first."
   },
   "process": {
     "eyebrow": "THE METHOD",
-    "heading": "Architecture first, then development — one step at a time.",
-    "lead": "Whether it's a website, an application or an automation, the way of working stays the same: first the problem is understood, then the solution is designed, and only at the end is the code written.",
+    "heading": "From problem to working system.",
+    "lead": "First we understand the challenge, then design the solution, build it in stages and verify the result before launch.",
     "steps": [
       {
         "index": "01",
-        "title": "Listening and analysis",
-        "description": "It starts with a conversation about the business's real process, not a form to fill in: goals, constraints and priorities are brought into focus together.",
-        "result": "A clear view of what's really needed, before talking about solutions."
+        "title": "Analysis",
+        "description": "Understand the challenge, goals and constraints."
       },
       {
         "index": "02",
-        "title": "Solution architecture",
-        "description": "Before a single line of code is written, it's defined how the different parts of the system need to communicate with each other and with the tools already in use.",
-        "result": "A clear technical plan, agreed on before development begins."
+        "title": "Architecture",
+        "description": "Design the system before writing code."
       },
       {
         "index": "03",
-        "title": "Phased development",
-        "description": "The project moves forward in controlled phases, each with a concrete result to verify, instead of a single block delivered only at the end.",
-        "result": "Visible progress step by step, with no last-minute surprises."
+        "title": "Development",
+        "description": "Build in small, verifiable stages."
       },
       {
         "index": "04",
-        "title": "Verification and delivery",
-        "description": "Before delivery, the solution is checked in real working conditions, not just on paper, so any fixes happen before launch.",
-        "result": "A verified solution, ready to actually be used."
+        "title": "Launch",
+        "description": "Verify, refine and deliver the solution."
       }
     ],
-    "differentiation": {
-      "heading": "What makes it different",
-      "principles": [
-        "Direct contact with the person who builds it",
-        "Architecture before code",
-        "Transparent development, verified step by step"
-      ]
-    }
+    "principles": [
+      "Direct contact",
+      "Architecture before code",
+      "Transparent process"
+    ]
   },
   "cases": {
     "eyebrow": "DEMONSTRATIVE SCENARIOS",

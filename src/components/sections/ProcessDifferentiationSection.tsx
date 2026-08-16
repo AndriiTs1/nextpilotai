@@ -1,59 +1,104 @@
+import Image from "next/image";
+
 import { getTranslations } from "next-intl/server";
 
 type Step = {
   index: string;
   title: string;
   description: string;
-  result: string;
 };
-
-function ProcessStep({ index, title, description, result }: Step) {
-  return (
-    <article className="process-step">
-      <span className="process-step-index" aria-hidden="true">
-        {index}
-      </span>
-      <h3 className="process-step-title">{title}</h3>
-      <p className="process-step-description">{description}</p>
-      <p className="process-step-result">{result}</p>
-    </article>
-  );
-}
 
 export default async function ProcessDifferentiationSection() {
   const t = await getTranslations("process");
   const steps = t.raw("steps") as Step[];
-  const principles = t.raw("differentiation.principles") as string[];
+  const principles = t.raw("principles") as string[];
 
   return (
-    <section className="process" aria-labelledby="process-heading">
+    <section className="process-v2" aria-labelledby="process-heading">
       <div className="section-intro">
         <p className="section-eyebrow">{t("eyebrow")}</p>
 
-        <h2 className="section-heading" id="process-heading">
+        <h2
+          className="section-heading section-heading--lg"
+          id="process-heading"
+        >
           {t("heading")}
         </h2>
 
         <p className="section-lead">{t("lead")}</p>
       </div>
 
-      <div className="process-steps">
+      <div className="process-v2-grid">
         {steps.map((step) => (
-          <ProcessStep key={step.title} {...step} />
+          <article className="process-v2-card" key={step.index}>
+            <span className="process-v2-number" aria-hidden="true">
+              {step.index}
+            </span>
+
+            <div className="process-v2-visual" aria-hidden="true">
+              {step.index === "01" && (
+                <Image
+                  src="/images/process/analysis-3d.png"
+                  alt=""
+                  width={1498}
+                  height={1498}
+                  className="process-v2-icon"
+                />
+              )}
+
+              {step.index === "02" && (
+                <Image
+                  src="/images/process/architecture-3d.png"
+                  alt=""
+                  width={1254}
+                  height={1254}
+                  className="process-v2-icon"
+                />
+              )}
+
+              {step.index === "03" && (
+                <Image
+                  src="/images/process/development-3d.png"
+                  alt=""
+                  width={1536}
+                  height={1536}
+                  className="process-v2-icon"
+                />
+              )}
+
+              {step.index === "04" && (
+                <Image
+                  src="/images/process/launch-3d.png"
+                  alt=""
+                  width={1536}
+                  height={1536}
+                  className="process-v2-icon"
+                />
+              )}
+            </div>
+
+            <div className="process-v2-content">
+              <h3 className="process-v2-title">{step.title}</h3>
+
+              <p className="process-v2-description">
+                {step.description}
+              </p>
+            </div>
+          </article>
         ))}
       </div>
 
-      <div className="process-differentiation">
-        <h3 className="process-differentiation-heading">
-          {t("differentiation.heading")}
-        </h3>
-
-        <ul className="process-differentiation-list">
-          {principles.map((principle) => (
-            <li key={principle}>{principle}</li>
-          ))}
-        </ul>
-      </div>
+      <ul className="process-v2-principles">
+        {principles.map((principle, index) => (
+          <li key={principle}>
+            <span
+              className={`process-v2-principle-dot process-v2-principle-dot--${index + 1}`}
+              aria-hidden="true"
+            />
+            {principle}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

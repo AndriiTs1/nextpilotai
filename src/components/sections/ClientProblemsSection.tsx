@@ -11,26 +11,43 @@ export default async function ClientProblemsSection() {
 
   return (
     <section className="problems" aria-labelledby="problems-heading">
-      <div className="section-intro">
-        <p className="section-eyebrow">{t("eyebrow")}</p>
+      <div className="problems-intro">
+        <div className="section-intro">
+          <p className="section-eyebrow">{t("eyebrow")}</p>
 
-        <h2 className="section-heading" id="problems-heading">
-          {t("heading")}
-        </h2>
+          <h2
+            className="section-heading section-heading--lg"
+            id="problems-heading"
+          >
+            {t("heading")}
+          </h2>
+        </div>
 
-        <p className="section-lead">{t("lead")}</p>
+        <p className="section-lead problems-lead">{t("lead")}</p>
       </div>
 
       <div className="problems-grid">
-        {problems.map((problem) => (
+        {problems.map((problem, index) => (
           <article className="problem-card" key={problem.label}>
+            <div className="problem-card-top">
+              <span className="problem-number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+
+              <span className="problem-dot" aria-hidden="true" />
+            </div>
+
             <h3 className="problem-label">{problem.label}</h3>
+
             <p className="problem-text">{problem.text}</p>
           </article>
         ))}
       </div>
 
-      <p className="problems-transition">{t("transition")}</p>
+      <div className="problems-transition">
+        <span className="problems-transition-line" aria-hidden="true" />
+        <p>{t("transition")}</p>
+      </div>
     </section>
   );
 }

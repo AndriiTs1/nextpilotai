@@ -21,18 +21,35 @@
     "cta": "Scrivimi del tuo progetto",
     "trust": "Parli direttamente con chi sviluppa, senza passaggi intermedi.",
     "capabilities": [
-      { "value": "AI", "label": "Automazione" },
-      { "value": "Web", "label": "Sistemi" },
-      { "value": "Architettura", "label": "Prima del codice" }
+      {
+        "value": "AI",
+        "label": "Automazione"
+      },
+      {
+        "value": "Web",
+        "label": "Sistemi"
+      },
+      {
+        "value": "Architettura",
+        "label": "Prima del codice"
+      }
     ]
   },
   "trustStrip": {
-    "ariaLabel": "Punti di fiducia",
+    "ariaLabel": "Vantaggi della collaborazione",
     "signals": [
-      "Base a Lugano, Svizzera",
-      "Contatto diretto, senza intermediari",
-      "Architettura prima del codice",
-      "Processo trasparente, passo dopo passo"
+      {
+        "title": "Contatto diretto",
+        "text": "Senza manager o intermediari"
+      },
+      {
+        "title": "Architettura su misura",
+        "text": "Prima la soluzione, poi il codice"
+      },
+      {
+        "title": "Processo trasparente",
+        "text": "Fasi chiare dall'idea al lancio"
+      }
     ]
   },
   "problems": {
@@ -60,79 +77,88 @@
     "transition": "Non è mai un solo strumento a fare la differenza, ma il modo in cui l'intero sistema lavora insieme."
   },
   "solutions": {
-    "eyebrow": "ESIGENZE DIGITALI",
-    "heading": "Ogni azienda ha bisogno di soluzioni diverse, non di una ricetta unica.",
-    "lead": "Le difficoltà descritte sopra raramente si risolvono con un'unica mossa: a seconda di cosa sta realmente frenando l'azienda, la risposta giusta può essere un sito, un'applicazione, un'automazione o un collegamento tra sistemi già esistenti.",
+    "eyebrow": "SOLUZIONI DIGITALI",
+    "heading": "Ogni azienda ha bisogno della propria soluzione.",
+    "lead": "Sito, applicazione, automazione o integrazione: la scelta dipende da ciò che sta davvero rallentando l'azienda.",
     "items": [
       {
         "title": "Presentare l'azienda online",
         "service": "Siti Web",
-        "description": "Se il sito è vecchio, lento o assente, chi arriva sulla pagina non capisce cosa fare né percepisce il livello reale dell'azienda: il risultato sono meno contatti e meno fiducia.",
-        "examples": ["Sito aziendale", "Landing page", "Area informativa"],
-        "result": "Più chiarezza per chi visita il sito, più richieste che arrivano davvero."
+        "description": "Un sito moderno rende chiaro il valore dell'azienda e guida il visitatore verso l'azione giusta.",
+        "examples": [
+          "Sito aziendale",
+          "Landing page",
+          "Area informativa"
+        ],
+        "result": "Più fiducia, chiarezza e richieste di qualità."
       },
       {
         "title": "Gestire processi interni",
         "service": "Applicazioni Web",
-        "description": "Quando fogli Excel, messaggi e strumenti diversi non bastano più a tenere tutto sotto controllo, serve uno strumento pensato sul modo in cui il team lavora davvero, non il contrario.",
-        "examples": ["Area clienti", "Dashboard operativa", "Gestione richieste"],
-        "result": "Meno passaggi manuali, processi più ordinati e più facili da seguire."
+        "description": "Quando Excel, messaggi e strumenti separati non bastano più, serve un sistema costruito sul modo in cui il team lavora davvero.",
+        "examples": [
+          "Area clienti",
+          "Dashboard operativa",
+          "Gestione richieste"
+        ],
+        "result": "Meno passaggi manuali e processi più chiari."
       },
       {
         "title": "Ridurre il lavoro manuale",
-        "service": "Automazione e Intelligenza Artificiale",
-        "description": "Rispondere sempre alle stesse domande, spostare dati a mano da un sistema all'altro o smistare documenti uno per uno consuma tempo prezioso: l'automazione e l'intelligenza artificiale intervengono solo dove riducono davvero questo carico, senza sostituire le persone.",
-        "examples": ["Risposte automatiche", "Gestione documenti", "Notifiche e flussi"],
-        "result": "Meno attività ripetitive, più tempo per il lavoro che conta davvero."
+        "service": "AI e Automazione",
+        "description": "L'automazione gestisce attività ripetitive, dati e documenti dove può davvero far risparmiare tempo.",
+        "examples": [
+          "Risposte automatiche",
+          "Gestione documenti",
+          "Notifiche e flussi"
+        ],
+        "result": "Meno attività ripetitive, più tempo per ciò che conta."
       },
       {
         "title": "Vendere e collegare sistemi",
         "service": "E-commerce e Integrazioni",
-        "description": "Vendere online richiede molto più di un catalogo: servono pagamenti affidabili, un collegamento reale con gli strumenti già in uso e dati che si aggiornano da soli tra un sistema e l'altro, senza doppio lavoro.",
-        "examples": ["Catalogo e ordini", "Pagamenti online", "Integrazione CRM"],
-        "result": "Vendite e sistemi collegati, senza dati duplicati da gestire a mano."
+        "description": "Vendite, pagamenti, CRM e altri strumenti possono lavorare come un unico sistema senza duplicare i dati.",
+        "examples": [
+          "Catalogo e ordini",
+          "Pagamenti online",
+          "Integrazione CRM"
+        ],
+        "result": "Vendite e dati collegati senza lavoro manuale inutile."
       }
     ],
-    "transition": "Spesso la risposta giusta combina più di una di queste soluzioni: per questo l'architettura viene pensata prima di scegliere lo strumento."
+    "transition": "La soluzione migliore spesso combina più aree: per questo il sistema viene progettato prima."
   },
   "process": {
     "eyebrow": "IL METODO",
-    "heading": "Prima l'architettura, poi lo sviluppo — un passo alla volta.",
-    "lead": "Che si tratti di un sito, di un'applicazione o di un'automazione, il modo di lavorare resta lo stesso: prima si capisce il problema, poi si progetta la soluzione, e solo alla fine si scrive il codice.",
+    "heading": "Dal problema a un sistema che funziona.",
+    "lead": "Prima capiamo la necessità, poi progettiamo la soluzione, sviluppiamo per fasi e verifichiamo il risultato prima del lancio.",
     "steps": [
       {
         "index": "01",
-        "title": "Ascolto e analisi",
-        "description": "Si parte da una conversazione sul processo reale dell'azienda, non da un modulo da compilare: obiettivi, vincoli e priorità vengono messi a fuoco insieme.",
-        "result": "Una visione chiara di cosa serve davvero, prima di parlare di soluzioni."
+        "title": "Analisi",
+        "description": "Capire necessità, obiettivi e vincoli."
       },
       {
         "index": "02",
-        "title": "Architettura della soluzione",
-        "description": "Prima di scrivere una riga di codice, si definisce come le diverse parti del sistema devono comunicare tra loro e con gli strumenti già in uso.",
-        "result": "Un piano tecnico chiaro, condiviso prima dell'inizio dello sviluppo."
+        "title": "Architettura",
+        "description": "Progettare il sistema prima del codice."
       },
       {
         "index": "03",
-        "title": "Sviluppo per fasi",
-        "description": "Il progetto avanza in fasi controllate, ognuna con un risultato concreto da verificare, invece di un unico blocco consegnato solo alla fine.",
-        "result": "Progressi visibili passo dopo passo, senza sorprese finali."
+        "title": "Sviluppo",
+        "description": "Procedere in fasi piccole e verificabili."
       },
       {
         "index": "04",
-        "title": "Verifica e consegna",
-        "description": "Prima della consegna, la soluzione viene controllata nel funzionamento reale, non solo sulla carta, così eventuali correzioni si fanno prima del lancio.",
-        "result": "Una soluzione verificata, pronta per essere usata davvero."
+        "title": "Lancio",
+        "description": "Verificare, rifinire e consegnare la soluzione."
       }
     ],
-    "differentiation": {
-      "heading": "Cosa lo rende diverso",
-      "principles": [
-        "Contatto diretto con chi sviluppa",
-        "Architettura prima del codice",
-        "Sviluppo trasparente, verificato passo dopo passo"
-      ]
-    }
+    "principles": [
+      "Contatto diretto",
+      "Architettura prima del codice",
+      "Processo trasparente"
+    ]
   },
   "cases": {
     "eyebrow": "SCENARI DIMOSTRATIVI",

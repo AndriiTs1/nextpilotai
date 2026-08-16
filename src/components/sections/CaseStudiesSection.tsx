@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
-import CaseFlow from "./CaseFlow";
+import CasesShowcase from "./CasesShowcase";
 
 type CaseStudyData = {
   title: string;
@@ -32,18 +32,13 @@ export default async function CaseStudiesSection() {
         <p className="section-lead">{t("lead")}</p>
       </div>
 
-      <div className="cases-list">
-        {caseStudies.map((caseStudy, index) => (
-          <CaseFlow
-            key={caseStudy.title}
-            index={index + 1}
-            toggleLabels={toggleLabels}
-            statusLabels={statusLabels}
-            toggleAriaLabel={t("toggleAriaLabel", { title: caseStudy.title })}
-            {...caseStudy}
-          />
-        ))}
-      </div>
+      <CasesShowcase
+        items={caseStudies}
+        beforeLabel={toggleLabels.prima}
+        afterLabel={toggleLabels.dopo}
+        fragmentedLabel={statusLabels.frammentato}
+        coordinatedLabel={statusLabels.coordinato}
+      />
 
       <div className="cases-cta">
         <h3 className="cases-cta-heading">{t("cta.heading")}</h3>
