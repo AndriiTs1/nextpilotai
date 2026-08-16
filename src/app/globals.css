@@ -3889,3 +3889,77 @@ body {
   }
 }
 
+
+/* NextPilotAI — real NP brand mark */
+.site-logo {
+  overflow: hidden;
+}
+
+.site-logo-image {
+  display: block;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+@media (max-width: 560px) {
+  .site-logo-image {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* NextPilotAI — gradient AI wordmark */
+.site-brand-name {
+  display: inline-flex;
+  width: auto;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0;
+}
+
+.site-brand-ai-text {
+  background: linear-gradient(
+    135deg,
+    #22d3ee 0%,
+    #38bdf8 32%,
+    #6366f1 68%,
+    #c084fc 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.28));
+}
+
+
+/* Footer — NextPilotAI brand refinement */
+.site-footer-brand {
+  display: inline-flex;
+  align-items: baseline;
+  font-weight: 500;
+}
+
+.site-footer-ai {
+  background: linear-gradient(
+    135deg,
+    #22d3ee 0%,
+    #38bdf8 32%,
+    #6366f1 68%,
+    #c084fc 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.site-footer-services {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.site-footer-copyright {
+  color: rgba(255, 255, 255, 0.48);
+}
+

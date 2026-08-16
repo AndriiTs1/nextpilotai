@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 type ScrollToTopBrandProps = {
   brandName: string;
   brandSubtitle: string;
@@ -32,10 +34,22 @@ export default function ScrollToTopBrand({
       aria-label={ariaLabel}
       onClick={handleClick}
     >
-      <span className="site-logo">N</span>
+      <span className="site-logo" aria-hidden="true">
+        <Image
+          src="/brand/nextpilotai-logo-3d.png"
+          alt=""
+          width={44}
+          height={44}
+          className="site-logo-image"
+          priority
+        />
+      </span>
 
       <span className="site-brand-content">
-        <span className="site-brand-name">{brandName}</span>
+        <span className="site-brand-name" aria-label={brandName}>
+          <span>NextPilot</span>
+          <span className="site-brand-ai-text" aria-hidden="true">AI</span>
+        </span>
         <span className="site-brand-subtitle">{brandSubtitle}</span>
       </span>
     </button>
