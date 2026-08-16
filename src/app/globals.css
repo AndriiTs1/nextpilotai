@@ -3836,3 +3836,35 @@ button.site-brand {
   }
 }
 
+
+/* Prevent mobile horizontal rubber-band / overscroll */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+}
+
+.site-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+
+/* Prevent horizontal mobile overscroll / rubber-band */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+}
+
+.site-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
