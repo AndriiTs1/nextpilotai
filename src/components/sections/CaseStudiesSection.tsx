@@ -45,9 +45,12 @@ export default async function CaseStudiesSection() {
 
         <p className="cases-cta-text">{t("cta.text")}</p>
 
-        <button type="button" className="hero-cta">
+        <a
+          href="mailto:curupa8888@gmail.com?subject=Project%20inquiry%20%E2%80%94%20NextPilotAI"
+          className="hero-cta"
+        >
           {t("cta.button")}
-        </button>
+        </a>
       </div>
     </section>
   );

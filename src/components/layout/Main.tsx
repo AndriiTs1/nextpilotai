@@ -29,9 +29,12 @@ export default async function Main() {
               <p className="hero-description">{t("description")}</p>
 
               <div className="hero-cta-group">
-                <button type="button" className="hero-cta">
+                <a
+                  href="mailto:curupa8888@gmail.com?subject=Project%20inquiry%20%E2%80%94%20NextPilotAI"
+                  className="hero-cta"
+                >
                   {t("cta")}
-                </button>
+                </a>
 
                 <p className="hero-trust">{t("trust")}</p>
               </div>
