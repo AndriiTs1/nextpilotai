@@ -1,8 +1,9 @@
 {
   "metadata": {
-    "title": "NextPilotAI — Web Apps, Websites & AI Automation",
+    "title": "NextPilotAI",
     "titleTemplate": "%s | NextPilotAI",
-    "description": "Modern websites, web applications and AI-powered business automation for companies in Lugano, Switzerland."
+    "description": "Modern websites, web applications and AI-powered business automation for companies in Lugano, Switzerland.",
+    "socialTitle": "NextPilotAI — Web Apps, Websites & AI Automation"
   },
   "languageSwitcher": {
     "ariaLabel": "Language switcher"

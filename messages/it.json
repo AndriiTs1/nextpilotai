@@ -1,8 +1,9 @@
 {
   "metadata": {
-    "title": "NextPilotAI — Siti Web, Applicazioni e Automazione AI",
+    "title": "NextPilotAI",
     "titleTemplate": "%s | NextPilotAI",
-    "description": "Siti web moderni, applicazioni web e automazione aziendale con intelligenza artificiale per aziende a Lugano, Svizzera."
+    "description": "Siti web moderni, applicazioni web e automazione aziendale con intelligenza artificiale per aziende a Lugano, Svizzera.",
+    "socialTitle": "NextPilotAI — Siti Web, Applicazioni e Automazione AI"
   },
   "languageSwitcher": {
     "ariaLabel": "Selettore lingua"

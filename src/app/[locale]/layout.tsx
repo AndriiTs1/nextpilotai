@@ -146,7 +146,7 @@ export async function generateMetadata({
       languages,
     },
     openGraph: {
-      title: t("title"),
+      title: t("socialTitle"),
       description: t("description"),
       url: localeHref(locale),
       siteName: "NextPilotAI",
@@ -155,6 +155,11 @@ export async function generateMetadata({
         .filter((l) => l !== locale)
         .map((l) => OG_LOCALE[l]),
       type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("socialTitle"),
+      description: t("description"),
     },
   };
 }
