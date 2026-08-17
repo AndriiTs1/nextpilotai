@@ -18,7 +18,7 @@
     "badge": "SITES · APPS · AUTOMATION",
     "titleLine1": "The digital system behind",
     "titleAccent": "a business that works.",
-    "description": "NextPilot AI designs websites, web applications, automation and artificial intelligence as a single system: your business stops depending on scattered tools and starts working in a coordinated way.",
+    "description": "NextPilotAI designs websites, web applications, automation and artificial intelligence as a single system: your business stops depending on scattered tools and starts working in a coordinated way.",
     "cta": "Tell me about your project",
     "trust": "You talk directly to the person who builds it, with no one in between.",
     "capabilities": [
@@ -237,10 +237,5 @@
       "text": "You don't need to know which technology to use: it starts with the problem, and the right solution gets built together from there.",
       "button": "Tell me about your project"
     }
-  },
-  "footer": {
-    "brandName": "NextPilotAI",
-    "location": "Lugano, Switzerland · AI · Web · Automation",
-    "copyright": "© 2026"
   }
 }

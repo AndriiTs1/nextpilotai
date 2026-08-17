@@ -18,7 +18,7 @@
     "badge": "SITI · APP · AUTOMAZIONE",
     "titleLine1": "Il sistema digitale dietro",
     "titleAccent": "un'azienda che funziona.",
-    "description": "NextPilot AI progetta siti, applicazioni web, automazioni e intelligenza artificiale come un unico sistema: la tua azienda smette di dipendere da strumenti sparsi e inizia a lavorare in modo coordinato.",
+    "description": "NextPilotAI progetta siti, applicazioni web, automazioni e intelligenza artificiale come un unico sistema: la tua azienda smette di dipendere da strumenti sparsi e inizia a lavorare in modo coordinato.",
     "cta": "Scrivimi del tuo progetto",
     "trust": "Parli direttamente con chi sviluppa, senza passaggi intermedi.",
     "capabilities": [
@@ -237,10 +237,5 @@
       "text": "Non serve sapere quale tecnologia usare: si parte dal problema, e insieme si costruisce la soluzione giusta.",
       "button": "Scrivimi del tuo progetto"
     }
-  },
-  "footer": {
-    "brandName": "NextPilotAI",
-    "location": "Lugano, Switzerland · AI · Web · Automation",
-    "copyright": "© 2026"
   }
 }
